@@ -1,0 +1,18 @@
+{
+  "name": "hem-jade",
+  "version": "0.0.1",
+  "author": "Vojtech Rinik <vojto@rinik.net>",
+  "contributors": [
+    {
+      "name": "Michael Phan-Ba",
+      "email": "michael@mikepb.com"
+    }
+  ],
+  "description": "Adds Jade templates support to Hem",
+  "dependencies": {
+    "hem": "*",
+    "coffee-script": "*",
+    "jade": "*"
+  },
+  "main": "./lib/hem-jade.js"
+}

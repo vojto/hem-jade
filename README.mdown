@@ -1,0 +1,39 @@
+# hem-jade
+
+Use Jade in your Spine application!
+
+This package lets you use [Jade](https://github.com/visionmedia/jade) with [hem](https://github.com/maccman/hem/) server, usually in a [Spine](http://spinejs.com/) application.
+
+## Installation
+
+Add this to your `package.json`:
+
+    {
+      "dependencies": {
+        "hem-jade": "*"
+      }
+    }
+
+Run `npm install .`
+
+## Using it
+
+Create `slug.js` with the following contents:
+
+    var argv = process.argv.slice(2);
+    require('hem-jade');
+    require('hem').exec(argv[0]);
+
+Run `hem server`!
+
+## How does it work
+
+`slug.js` loads `hem-haml-coffee` and passes it the argument.
+
+`hem-haml-coffee` loads `hem`, sets it up to understand `.haml` files, and returns it.
+
+## `#ProTip`
+
+Use [Spinegen](https://github.com/vojto/spinegen) to add Jade support in 1 second:
+
+    spinegen use jade

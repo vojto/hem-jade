@@ -10,11 +10,20 @@ Add this to your `package.json`:
 
     {
       "dependencies": {
+        // ...
+        "jade": "*"
         "hem-jade": "*"
       }
     }
 
 Run `npm install .`
+
+Add this to your `slug.json`:
+
+    "dependencies": [
+      // ...
+      "jade/lib/runtime"
+    ]
 
 ## Using it
 
